@@ -1,4 +1,7 @@
-node_modules/
+node_modules
+bower_components
+app/dist
 *.sublime-project
 *.sublime-workspace
-npm-debug.log
+*.log
+logs

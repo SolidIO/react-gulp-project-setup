@@ -1,0 +1,16 @@
+{
+  "name": "react-boilerplate",
+  "description": "Build process setup with gulp and browserify",
+  "main": "main.js",
+  "authors": [
+    "Johan Gustafsson <johan.gustafsson@solidio.se>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/SolidIO/react-gulp-project-setup",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

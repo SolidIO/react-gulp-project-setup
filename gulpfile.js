@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	watch = require('gulp-watch'),
 	livereload = require('gulp-livereload'),
+	bower = require('gulp-bower'),
 	port = process.env.port || 3031;
 
 gulp.task('browserify', function() {
@@ -43,6 +44,11 @@ gulp.task('html', function() {
 	.pipe(livereload({ start: true }));
 });
 
+gulp.task('bower', function() {
+  return bower()
+    .pipe(gulp.dest('./app/dist/bower_components'));
+});
+
 // Watch files for live reload
 gulp.task('watch', function() {
 	livereload.listen();
@@ -53,4 +59,4 @@ gulp.task('watch', function() {
 
 gulp.task('default', ['browserify']);
 
-gulp.task('serve', ['browserify', 'connect', 'open', 'watch']);
+gulp.task('serve', ['browserify', 'connect', 'open', 'watch', 'bower']);
