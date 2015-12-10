@@ -116,7 +116,7 @@ gulp.task('watch', function() {
     gulp.watch(['./app/index.html'], ['html']);
     gulp.watch(['./app/dist/css/*.css'], ['css']);
     gulp.watch(['./app/src/js/**/*.js'], ['browserify-js']);
-    gulp.watch(['./app/css/*.css'], ['browserify-css']);
+    gulp.watch(['./app/src/css/*.css'], ['browserify-css']);
 });
 
 gulp.task('clean_dist', ['clean']);
