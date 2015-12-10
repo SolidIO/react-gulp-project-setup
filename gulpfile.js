@@ -34,7 +34,7 @@ gulp.task('browserify-js', function() {
 
 // Browserify css
 gulp.task('browserify-css', function() {
-    gulp.src('./app/src/css/stylesheet.css')
+    gulp.src('./app/src/css/style.css')
         .pipe(gulp.dest('./app/dist/css'));
 });
 
